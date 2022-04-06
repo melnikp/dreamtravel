@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Dream Travel</title>
+		<meta name="theme-color" content="#ddd">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="robots" content="noarchive">
+		<meta name="robots" content="noindex,nofollow">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.min.css">
+	</head>
+	<body>
+		<div id="header">
+		<div id="nav_toggle" class="navigation">
+		  <div class="navigation__inner">
+		    <ul>
+				<li><a href="#" class="link">home</a></li>
+				<li><a href="#" class="link">tours</a></li>
+				<li><a href="#" class="link">package</a></li>
+				<li><a href="#" class="link">blog</a></li>
+				<li><a href="#" class="link">contact</a></li>
+			</ul>
+		  </div>
+		</div>
+			<div class="container">
+				<div id="header_top">
+					<div class="social">
+						<a href="#" class="icons-1"></a>
+						<a href="#" class="icons-2"></a>
+						<a href="#" class="icons-3"></a>
+						<a href="#" class="icons-4"></a>
+						<a href="#" class="icons-5"></a>
+					</div>
+					<div class="login">
+						<div>
+							<span class="icons-6"></span>
+							<span> 1835 73rd Ave NE, Medina, Washington, USA.</span>
+						</div>
+						<div>
+							<a href="">Login</a>
+							<a href="">register</a>
+						</div>
+					</div>
+				</div>
+				<div id="header_bottom">
+					<div class="logo"><img src="img/logo.png" alt="logo" class="logo_img"></div>
+					<nav id="nav">
+						<ul>
+							<li><a href="#" class="link">home</a></li>
+							<li><a href="#" class="link">tours</a></li>
+							<li><a href="#" class="link">package</a></li>
+							<li><a href="#" class="link">blog</a></li>
+							<li><a href="#" class="link">contact</a></li>
+						</ul>
+					</nav>
+					<button class="hamburger hamburger--spring js-hamburger" type="button">
+					 	<span class="hamburger-box">
+					    	<span class="hamburger-inner"></span>
+					 	</span>
+					</button>
+				</div>
+				<div class="content">
+					<p class="namber">+91 254 587 485</p>
+					<h1>Book a Ticket & Just Leave!</h1>
+					<p>Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot,bicycle, automobile, train, boat, bus.</p>
+					<a href="#" class="get_ticket icons-7">Get ticket</a>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div id="tab-search">
+				<div class="container relative">
+					<div id="search">
+			
+						<ul class="tabs" role="tablist">
+						    <li>
+						        <input type="radio" name="tabs" id="tab1" checked />
+						        <label for="tab1" tabindex="1">hotel</label>
+						        <div id="tab-content1" class="tab-content" aria-hidden="false">
+						          <form id="hotel_form">
+						          	<label for="hotel-where">where?
+						          	<input type="text" id="hotel-where" placeholder="Choose location"></label>
+						          	<label for="hotel-which">which?
+						          	<input type="text" id="hotel-which" placeholder="Choose City"></label>
+						          	<label for="hotel-in">check in
+						          	<input type="text" id="hotel-in" placeholder="YY-DD-MM"></label>
+						          	<label for="hotel-out">check out
+						          	<input type="text" id="hotel-out" placeholder="YY-DD-MM"></label>
+						          	<button form="hotel_form" id="search_button_hotel">Search</button>
+						          </form>
+						        </div>
+						    </li>
+						    <li>
+						        <input type="radio" name="tabs" id="tab2" />
+						        <label for="tab2" tabindex="0">tours</label>
+						        <div id="tab-content2" class="tab-content" aria-hidden="true">
+						           <form id="tours_form">
+						          	<label for="tours-where">where?
+						          	<input type="text" id="tours-where" placeholder="Choose location"></label>
+						          	<label for="tours-which">which?
+						          	<input type="text" id="tours-which" placeholder="Choose City"></label>
+						          	<label for="tours-in">check in
+						          	<input type="text" id="tours-in" placeholder="YY-DD-MM"></label>
+						          	<label for="tours-out">check out
+						          	<input type="text" id="tours-out" placeholder="YY-DD-MM"></label>
+						          	<button form="tours_form" id="search_button_tours">Search</button>
+						          </form>
+						        </div>
+						    </li>
+						    <li>
+						        <input type="radio" name="tabs" id="tab3" />
+						        <label for="tab3" tabindex="0">package</label>
+						        <div id="tab-content3" class="tab-content" aria-hidden="true">
+						           <form id="packag_form">
+						          	<label for="packag-where">where?
+						          	<input type="text" id="packag-where" placeholder="Choose location"></label>
+						          	<label for="packag-which">which?
+						          	<input type="text" id="packag-which" placeholder="Choose City"></label>
+						          	<label for="packag-in">check in
+						          	<input type="text" id="packag-in" placeholder="YY-DD-MM"></label>
+						          	<label for="packag-out">check out
+						          	<input type="text" id="packag-out" placeholder="YY-DD-MM"></label>
+						          	<button form="packag_form" id="search_button_packag">Search</button>
+						          </form>
+						        </div>
+						    </li>
+						</ul>
+			
+					</div>
+				</div>
+			</div>
+			<section id="populer_place">
+				<div class="container">
+					<p>Popular Tour Packages</p>
+					<h2>Populer place</h2>
+					<div id="populer_place_slider1">
+						<div class="populer_place_card">
+							<img data-lazy ="./img/Mountain-in-Banff-National-Park.png" alt="asdsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card pading_30">
+							<img data-lazy ="./img/iStock503269206_Glenfinnan_2400x800.png" alt="adsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card">
+							<img data-lazy ="./img/norway-today-170707-inline_56b32663084e767c2d2949951daeb5e2.today-inline-large.png" alt="adsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card">
+							<img data-lazy ="./img/Mountain-in-Banff-National-Park.png" alt="asdsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card">
+							<img data-lazy ="./img/iStock503269206_Glenfinnan_2400x800.png" alt="adsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card">
+							<img data-lazy ="./img/norway-today-170707-inline_56b32663084e767c2d2949951daeb5e2.today-inline-large.png" alt="adsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card">
+							<img data-lazy ="./img/Mountain-in-Banff-National-Park.png" alt="asdsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card">
+							<img data-lazy ="./img/iStock503269206_Glenfinnan_2400x800.png" alt="adsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+						<div class="populer_place_card">
+							<img data-lazy ="./img/norway-today-170707-inline_56b32663084e767c2d2949951daeb5e2.today-inline-large.png" alt="adsd">
+							<div class="populer_place_item">
+								<p class="price">$500 2 days 2 night</p>
+								<p>Mancity, England</p>
+								<a href="#" class="arrow"></a>
+							</div>
+						</div>
+					</div>
+					<h2>Most Popular Travel Destinations</h2>
+					<p>Love travel? Plan and book your perfect trip with expert advice, travel tips, destination <br> information and inspiration from Lonely Planet</p>
+				</div>
+			
+					<div id="populer_place_slider2">
+						<div class="absolute">
+						<div class="container">
+							<div class="arrows_populer_place_slider2">
+								<button class="populer_place_prev icons-9"></button>
+								<button class="populer_place_next icons-8"></button>
+							</div>
+						</div>
+						</div>
+						<div id="populer_place_slider_slider2">
+							<div class="populer_place_card">
+								<img  data-lazy ="./img/Rectangle 2427.png" alt="">
+									<div class="populer_place_item">
+										<h5>Grand Switzerland</h5>
+										<div>
+											<a href="#" class="icons-10"></a>
+											<a href="#" class="icons-11"></a>
+											<a href="#" class="icons-12"></a>
+											<a href="#" class="icons-13"></a>
+											<a href="#" class="icons-14"></a>
+										</div>
+									</div>
+							</div>
+							<div class="populer_place_card">
+								<img data-lazy ="./img/Rectangle 2427.png" alt="">
+									<div class="populer_place_item">
+										<h5>Grand Switzerland</h5>
+										<div>
+											<a href="#" class="icons-10"></a>
+											<a href="#" class="icons-11"></a>
+											<a href="#" class="icons-12"></a>
+											<a href="#" class="icons-13"></a>
+											<a href="#" class="icons-14"></a>
+										</div>
+									</div>
+							</div>
+							<div class="populer_place_card">
+								<img data-lazy ="./img/Rectangle 2427.png" alt="">
+									<div class="populer_place_item">
+										<h5>Grand Switzerland</h5>
+										<div>
+											<a href="#" class="icons-10"></a>
+											<a href="#" class="icons-11"></a>
+											<a href="#" class="icons-12"></a>
+											<a href="#" class="icons-13"></a>
+											<a href="#" class="icons-14"></a>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section id="honeymoon">
+				<h2>Destinations for Honeymoon</h2>
+				<p>Love travel? Plan and book your perfect trip with expert advice, travel tips, destination
+				<br> information and inspiration from Lonely Planet</p>
+				<div id="honeymoon_slider1">
+					<div class="honeymoon_card">
+						<div class="honeymoon_item_img">
+							<img data-lazy ="./img/honeymoon_slider1.png" alt="honeymoon">
+							<div class="honeymoon_icons">
+								<a href="#" class="icons-13"></a>
+								<a href="#" class="icons_r-3"></a>
+								<a href="#" class="icons-14"></a>
+							</div>
+						</div>
+						<div class="honeymoon_item">
+							<h3>Switzerland</h3>
+							<p class="honeymoon_price">$560</p>
+							<p><span class="icons_r-1"></span><span>2 days 2night</span></p>
+							<p>There are a few very, very fine strands of PLA</p>
+							<p>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons_r-2"></span>
+							</p>
+							<a href="#">More Details</a>
+						</div>
+					</div>
+					<div class="honeymoon_card">
+						<div class="honeymoon_item_img">
+							<img data-lazy ="./img/honeymoon_slider2.png" alt="honeymoon2">
+							<div class="honeymoon_icons">
+								<a href="#" class="icons-13"></a>
+								<a href="#" class="icons_r-3"></a>
+								<a href="#" class="icons-14"></a>
+							</div>
+						</div>
+						<div class="honeymoon_item">
+							<h3>Switzerland</h3>
+							<p class="honeymoon_price">$560</p>
+							<p><span class="icons_r-1"></span><span>2 days 2night</span></p>
+							<p>There are a few very, very fine strands of PLA</p>
+							<p>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons_r-2"></span>
+							</p>
+							<a href="#">More Details</a>
+						</div>
+					</div>
+					<div class="honeymoon_card">
+						<div class="honeymoon_item_img">
+							<img data-lazy ="./img/honeymoon_slider3.png" alt="honeymoon3">
+							<div class="honeymoon_icons">
+								<a href="#" class="icons-13"></a>
+								<a href="#" class="icons_r-3"></a>
+								<a href="#" class="icons-14"></a>
+							</div>
+						</div>
+						<div class="honeymoon_item">
+							<h3>Switzerland</h3>
+							<p class="honeymoon_price">$560</p>
+							<p><span class="icons_r-1"></span><span>2 days 2night</span></p>
+							<p>There are a few very, very fine strands of PLA</p>
+							<p>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons-15"></span>
+								<span class="icons_r-2"></span>
+							</p>
+							<a href="#">More Details</a>
+						</div>
+					</div>
+				</div>
+				<div id="best_holidey">
+					<div class="container">
+						<div class="best_holidey_card">
+							<div class="best_holidey_item">
+								<p>50<sup>%</sup><span>OFF Discount 10-30% Off</span></p>
+								<h4>Best Holiday Packages</h4>
+								<p>Find your ideal holiday package whether you're travelling in Australia or around the World. Book Flights & Accommodation packages in one place with Escape Travel.</p>
+								<a href="#">read more</a>
+							</div>
+							<div class="best_holidey_item_slider">
+								<div class="arrows_best_holidey_slider">
+									<button class="prev icons-9"></button>
+									<button class="next icons-8"></button>
+								</div>
+								<div id="best_holidey_slider">
+									<div><img data-lazy ="./img/best_holidey_slider1.png" alt="best_holidey_slider1"></div>
+									<div><img data-lazy ="./img/best_holidey_slider1.png" alt="best_holidey_slider1"></div>
+									<div><img data-lazy ="./img/best_holidey_slider1.png" alt="best_holidey_slider1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="discount">
+				<div class="container relative">
+					<div id="discount_content">
+						<h2>30% Discount, stock limited</h2>
+						<p>The world's largest student and youth travel agency. Find cheap flights, tours, Spring Break packages and <br>exclusive travel deals for studentsTake full advantage of privileged discount rates.</p>
+						<a href="#" class="get_ticket icons-7">Get ticket</a>
+						<div id="discount_counter">
+							<div class="discount_counter_days">
+								<div class="number">364</div>
+								<div class="time_content">days</div>
+							</div>
+							<div class="discount_counter_hours">
+								<div class="number">23</div>
+								<div class="time_content">hours</div>
+							</div>
+							<div class="discount_counter_minutes">
+								<div class="number">59</div>
+								<div class="time_content">Minutes</div>
+							</div>
+							<div class="discount_counter_second">
+								<div class="number">59</div>
+								<div class="time_content">Second</div>
+							</div>
+						</div>
+					</div>
+					<div id="discount_slider">
+						<div id="discount_slider_slider">
+							<div class="discount_slider_card">
+								<div class="discount_slider_item_img">
+									<img data-lazy ="./img/Rectangle2415.png" alt="Rectangle2415">
+								</div>
+								<div class="discount_slider_item">
+									<h3>Italy (Rome)</h3>
+									<p><span class="icons-16"></span><span>3 Days 2 Night</span></p>
+									<p><span class="icons-16"></span><span>Visit most 4 populer place</span></p>
+									<p class="discount_price">$1500</p>
+									<a href="#" class="get_ticket icons-7">Get ticket</a>
+								</div>
+							</div>
+							<div class="discount_slider_card">
+								<div class="discount_slider_item_img">
+									<img data-lazy ="./img/Rectangle2415.png" alt="Rectangle2415">
+								</div>
+								<div class="discount_slider_item">
+									<h3>Italy (Rome)</h3>
+									<p><span class="icons-16"></span><span>3 Days 2 Night</span></p>
+									<p><span class="icons-16"></span><span>Visit most 4 populer place</span></p>
+									<p class="discount_price">$1500</p>
+									<a href="#" class="get_ticket icons-7">Get ticket</a>
+								</div>
+							</div>
+							<div class="discount_slider_card">
+								<div class="discount_slider_item_img">
+									<img data-lazy ="./img/Rectangle2415.png" alt="Rectangle2415">
+								</div>
+								<div class="discount_slider_item">
+									<h3>Italy (Rome)</h3>
+									<p><span class="icons-16"></span><span>3 Days 2 Night</span></p>
+									<p><span class="icons-16"></span><span>Visit most 4 populer place</span></p>
+									<p class="discount_price">$1500</p>
+									<a href="#" class="get_ticket icons-7">Get ticket</a>
+								</div>
+							</div>
+						</div>
+						<div class="arrows_discount_slider">
+							<button class="arrows_discount_slider_prev icons-9"></button>
+							<button class="arrows_discount_slider_next icons-8"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="subscribe">
+				<div class="container relative">
+					<h3>It’s a big deal!</h3>
+					<p>subscribe our news letter</p>
+					<form>
+						<input type="email" placeholder="Enter your email">
+						<button type="submit">submite</button>
+					</form>
+					<div id="watch_video">
+						<video poster="./img/poster.png" preload="none" onclick="this.paused ? this.play() : this.pause();">
+							<source src="./media/bow-ship-on.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+							<source src="./media/bow-ship-on.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+						</video>
+					</div>
+				</div>
+			</section>
+			<section id="blog">
+				<div class="container">
+					<div class="row">
+						<div class="post">
+							<img src="./img/blog_1.png" alt="blog_1">
+							<div class="post_item">
+								<p><span>29 February</span><span>by admin</span></p>
+								<h6>Here's how to get the most out of a Liverpool city!</h6>
+								<p>Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot.</p>
+								<div class="blog_icons">
+									<a href="#" class="icons_r-4"></a>
+									<a href="#" class="icons_r-3"></a>
+									<a href="#" class="icons-13"></a>
+								</div>
+							</div>
+						</div>
+						<div class="post">
+							<img src="./img/blog_2.png" alt="blog_2">
+							<div class="post_item">
+								<p><span>29 February</span><span>by admin</span></p>
+								<h6>Why Travel is Important If you've grown up with all the comforts ?</h6>
+								<p>Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot.</p>
+								<div class="blog_icons">
+									<a href="#" class="icons_r-4"></a>
+									<a href="#" class="icons_r-3"></a>
+									<a href="#" class="icons-13"></a>
+								</div>
+							</div>
+						</div>
+						<div class="post">
+							<img src="./img/blog_3.png" alt="blog_3">
+							<div class="post_item">
+								<p><span>29 February</span><span>by admin</span></p>
+								<h6>Travelling, for me, is same as reading books.</h6>
+								<p>Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot.</p>
+								<div class="blog_icons">
+									<a href="#" class="icons_r-4"></a>
+									<a href="#" class="icons_r-3"></a>
+									<a href="#" class="icons-13"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="container">
+				<div id="sup_footer">
+					<div id="footer_logo">
+						<div class="logo"><img src="img/logo.png" alt="logo" class="logo_img"></div>
+						<p>Phone: +91 254 541 254</p>
+						<p>Fax : +44 161 999 8888</p>
+						<p>Email: dreamland@dream.com</p>
+						<div class="social">
+							<a href="#" class="icons-1"></a>
+							<a href="#" class="icons-2"></a>
+							<a href="#" class="icons-3"></a>
+							<a href="#" class="icons-4"></a>
+							<a href="#" class="icons-5"></a>
+						</div>
+					</div>
+					<ul id="footer_nav">
+						<li><p>Support</p>
+							<ul>
+								<li><a href="#">Email Contact</a></li>
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">Live chat</a></li>
+								<li><a href="#">Our Community</a></li>
+								<li><a href="#">Services Status</a></li>
+							</ul>
+						</li>
+						<li><p>Location</p>
+							<ul>
+								<li><a href="#">London</a></li>
+								<li><a href="#">Canada</a></li>
+								<li><a href="#">America</a></li>
+								<li><a href="#">India</a></li>
+								<li><a href="#">Australia</a></li>
+							</ul>
+						</li>
+						<li><p>Menu</p>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Tours</a></li>
+								<li><a href="#">Packages</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="sub_footer">
+					<p>2018 All Rights Reserved</p>
+					<ul>
+						<li><a href="#">About Hoststar</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="./js/slick.min.js" defer></script>
+		<script src="./js/main.min.js" defer></script>
+	</body>
+</html>
